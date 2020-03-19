@@ -79,8 +79,8 @@ def truecoordinate(url,lat,lon):
 #         headding = 180
 #     else:
 #         heading = math.degrees(math.atan((lon2 - lon1) / (lat2 - lat1))) + 90
-#     url = "https://maps.googleapis.com/maps/api/streetview/metadata?size=640x640&location=" + str(lat1) + "," + str(lon1) + "&heading=" + str(heading) + "&key=AIzaSyCC_bzL68dKT0ha3pqvB4Q_1Hk75nU5TvQ"
-#     url2 = "https://maps.googleapis.com/maps/api/streetview/metadata?size=640x640&location=" + str(lat2) + "," + str(lon2) + "&heading=" + str(heading) + "&key=AIzaSyCC_bzL68dKT0ha3pqvB4Q_1Hk75nU5TvQ"
+#     url = "https://maps.googleapis.com/maps/api/streetview/metadata?size=640x640&location=" + str(lat1) + "," + str(lon1) + "&heading=" + str(heading) + "&key="
+#     url2 = "https://maps.googleapis.com/maps/api/streetview/metadata?size=640x640&location=" + str(lat2) + "," + str(lon2) + "&heading=" + str(heading) + "&key="
 #     lat1,lon1 = truecoordinate(url,lat1,lon1)
 #     lat2,lon2 = truecoordinate(url2,lat2,lon2)
 #     if lat1==lat2:
