@@ -59,13 +59,13 @@ class StreetScanner(object):
             lon = str(self.c1[0] + i * ((self.c2[0] - self.c1[0]) / numbers))
             lat = str(self.c1[1] + i * ((self.c2[1] - self.c1[1]) / numbers))
             
-            metadataurl =  "https://maps.googleapis.com/maps/api/streetview/metadata?size=640x640&location=" + lat + "," + lon + "&heading=" + heading + "&key=AIzaSyCC_bzL68dKT0ha3pqvB4Q_1Hk75nU5TvQ"
+            metadataurl =  "https://maps.googleapis.com/maps/api/streetview/metadata?size=640x640&location=" + lat + "," + lon + "&heading=" + heading + "&key="
             coordinate = self.truecoordinate(metadataurl)
             if not coordinate:
                 continue
             lat, lon = coordinate
             # name = "C:\\Users\\Yang\\Desktop\\master project\\pictures\\" + self.StreetName + "\\" + lat + "_" + lon + "_" + heading + "_FrontView.JPG"
-            # url = "https://maps.googleapis.com/maps/api/streetview?size=640x640&location=" + lat + "," + lon + "&heading=" + heading + "&key=AIzaSyCC_bzL68dKT0ha3pqvB4Q_1Hk75nU5TvQ"
+            # url = "https://maps.googleapis.com/maps/api/streetview?size=640x640&location=" + lat + "," + lon + "&heading=" + heading + "&key="
             #print zu
             # if os.path.exists(name):
             #     print('have same picture!')
