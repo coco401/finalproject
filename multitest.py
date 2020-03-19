@@ -62,15 +62,15 @@ for i in range(len(data)):
             view3 = float(view) - 15
             view4 = float(view) - 30
 
-            url1 = "https://maps.googleapis.com/maps/api/streetview?size=640x640&location=" + point_2_lat + "," + point_2_lon + "&heading=" + str(view1) + "&key=AIzaSyCC_bzL68dKT0ha3pqvB4Q_1Hk75nU5TvQ"
-            url2 = "https://maps.googleapis.com/maps/api/streetview?size=640x640&location=" + point_2_lat + "," + point_2_lon + "&heading=" + str(view2) + "&key=AIzaSyCC_bzL68dKT0ha3pqvB4Q_1Hk75nU5TvQ"
-            url3 = "https://maps.googleapis.com/maps/api/streetview?size=640x640&location=" + point_1_lat + "," + point_1_lon + "&heading=" + str(view3) + "&key=AIzaSyCC_bzL68dKT0ha3pqvB4Q_1Hk75nU5TvQ"
-            url4 = "https://maps.googleapis.com/maps/api/streetview?size=640x640&location=" + point_1_lat + "," + point_1_lon + "&heading=" + str(view4) + "&key=AIzaSyCC_bzL68dKT0ha3pqvB4Q_1Hk75nU5TvQ"
+            url1 = "https://maps.googleapis.com/maps/api/streetview?size=640x640&location=" + point_2_lat + "," + point_2_lon + "&heading=" + str(view1) + "&key="
+            url2 = "https://maps.googleapis.com/maps/api/streetview?size=640x640&location=" + point_2_lat + "," + point_2_lon + "&heading=" + str(view2) + "&key="
+            url3 = "https://maps.googleapis.com/maps/api/streetview?size=640x640&location=" + point_1_lat + "," + point_1_lon + "&heading=" + str(view3) + "&key="
+            url4 = "https://maps.googleapis.com/maps/api/streetview?size=640x640&location=" + point_1_lat + "," + point_1_lon + "&heading=" + str(view4) + "&key="
             
             birdeyeurl = "http://maps.googleapis.com/maps/api/staticmap?size=640x640&maptype=satellite&zoom=20" + "&center=" + point_0_lat +"," + point_0_lon + \
             "&markers=color:blue%7Clabel:A%7C" + point_0_lat + "," + point_0_lon + "&markers=color:blue%7Clabel:B%7C" + point_1_lat + "," + point_1_lon + \
             "&markers=color:blue%7Clabel:C%7C" + point_2_lat + "," + point_2_lon + \
-            "&key=AIzaSyCqes_Fi9KhIODy9nO0P-SDXlr_YPtzPeU" 
+            "&key=" 
             
             name0 = "C:\\Users\\Yang\\Desktop\\master project\\pictures\\2nd Avenue\\" + "2nd Avenue_"+ point_0_lat + "_" + point_0_lon + "_" + str(view) + "_FrontView.JPG"
 
@@ -193,7 +193,7 @@ for i in range(len(data)):
                 cv.polylines(img4, [np.int32(res4)], isClosed=True, color=(0,0,255), thickness=1)
 
             cv.imshow("image", img0)
-            cv.waitKey(0)
+            cv.wait(0)
             
             
             cv.imshow("image", img1)
